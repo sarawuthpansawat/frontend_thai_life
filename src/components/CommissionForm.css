@@ -1,0 +1,19 @@
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    margin-right: 10px;
+  }
+  
+  .form-group input[type="number"],
+  .form-group input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
