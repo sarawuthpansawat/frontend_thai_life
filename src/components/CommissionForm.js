@@ -10,7 +10,8 @@ const CommissionForm = ({ setResult }) => {
   const handleCommissionSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/api/commissions/commissionRate', { year, age });
+      const response = await axios.post('https://backend-thai-life.onrender.com/api/commissions/commissionRate', { year, age });
+      //const response = await axios.post('http://localhost:3001/api/commissions/commissionRate', { year, age });
       setResult(response.data);
     } catch (error) {
       console.error('Error fetching commission rate:', error);
@@ -21,7 +22,9 @@ const CommissionForm = ({ setResult }) => {
   const handleOverridingSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/api/commissions/overridingRate', { annual, age });
+      
+      //const response = await axios.post('http://localhost:3001/api/commissions/overridingRate', { annual, age });
+      const response = await axios.post('https://backend-thai-life.onrender.com/api/commissions/overridingRate', { annual, age });
       setResult(response.data);
     } catch (error) {
       console.error('Error fetching overriding rate:', error);

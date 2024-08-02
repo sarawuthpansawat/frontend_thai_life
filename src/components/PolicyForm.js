@@ -10,7 +10,9 @@ const PolicyForm = ({ setResult }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/api/policies/getPolicy', {
+      
+     // const response = await axios.post('http://localhost:3001/api/policies/getPolicy', {
+      const response = await axios.post('https://backend-thai-life.onrender.com/api/policies/getPolicy', {
         headerData: {
           messageId,
           sentDateTime,
